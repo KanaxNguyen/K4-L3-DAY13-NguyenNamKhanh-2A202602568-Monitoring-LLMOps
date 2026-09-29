@@ -23,7 +23,8 @@
 | Dashboard validator | `evidence/03-dashboard-validator.txt` |
 | Structured log / incident records | `evidence/13-incident-log.jsonl` |
 | PII redaction | `evidence/05-pii-redaction.txt` |
-| Trace list, waterfall và metadata | `evidence/06-traces-and-prompts.txt` và [trace v1 sau rollback](https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a/traces?peek=9dc24b28d2304a6b&observation=9dc24b28d2304a6b&traceId=33513940aa24674ca7db3f8995559942&timestamp=2026-09-29T10%3A03%3A37.205Z) |
+| 10 trace IDs | `evidence/06-traces-and-prompts.txt` |
+| Trace waterfall và metadata | [Trace v1 sau rollback](https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a/traces?peek=9dc24b28d2304a6b&observation=9dc24b28d2304a6b&traceId=33513940aa24674ca7db3f8995559942&timestamp=2026-09-29T10%3A03%3A37.205Z); ảnh PNG đã chụp trong phiên làm việc nhưng chưa lưu vào repo |
 | Prompt versions và rollback | `evidence/06-traces-and-prompts.txt` |
 | Dashboard runtime (6 panels + time series) | `http://127.0.0.1:8000/dashboard` (đã chụp qua Computer Use; ảnh PNG chưa lưu được vào repo) |
 | Incident metric (derived from measured challenge logs) | `evidence/12-incident-metric.json` |

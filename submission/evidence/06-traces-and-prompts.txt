@@ -2,6 +2,20 @@ Langfuse project: day13-k4-l3a-2A202602568
 Project URL: https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a
 Observed in Tracing UI on 2026-09-29 (Asia/Ho_Chi_Minh): 50 root observations and 150 total observations in the selected day window. The filtered promptVersion:1 view contained 10 generation observations.
 
+Ten distinct trace IDs visible in the Langfuse promptVersion:1 filtered table (all created in the personal project after rollback):
+| Correlation ID | Trace ID |
+|---|---|
+| `req-41be8c37` | `cf987f38b0c9b73494379190c8e84d55` |
+| `req-ffa19462` | `7dafe7955c9afdcbb00b1372524f062b` |
+| `req-5db042f4` | `c5017ca4a3f8c6384a5e4cef174bf2ca` |
+| `req-f413a49f` | `98efed1e840b0bf29c6dce4f4f3d9652` |
+| `req-398290e1` | `ccdc62577c6b951e8747c62ec410bdd4` |
+| `req-c604aebb` | `b7c0d91ef6a41f6ab45b9c2f4e7b778b` |
+| `req-50a84c5e` | `eba0051c6342c726c1ae2482ec36db67` |
+| `req-b51765e9` | `1cea008fb920a94728e1b25cce59a660` |
+| `req-dd965c6a` | `6944bbb8ac25d59fd81d3ddd418d2fcf` |
+| `req-e47c64bb` | `33513940aa24674ca7db3f8995559942` |
+
 Prompt Management state verified in the same personal project:
 - Prompt: day13-chat
 - Version 1: label production; baseline template Feature/Docs/Question.
