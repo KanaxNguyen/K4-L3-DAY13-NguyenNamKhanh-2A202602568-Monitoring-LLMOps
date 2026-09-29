@@ -1,34 +1,14 @@
-# Evidence cá nhân
+# Evidence cá nhân K4-L3A
 
-Đặt ảnh hoặc output text dùng để chấm vào thư mục này. Danh sách đầy đủ xem tại [docs/SUBMISSION.md](../../docs/SUBMISSION.md).
+Evidence chạy lệnh được lưu dưới dạng text và JSON để có thể mở trực tiếp trên GitHub:
 
-Tên file gợi ý:
+- `01-pytest.txt`: kết quả pytest cuối, 26 tests passed.
+- `02-log-validator.txt`: validator 100/100, không thiếu field/context và không có PII leak.
+- `03-dashboard-validator.txt`: contract dashboard hợp lệ 6/6.
+- `05-pii-redaction.txt`: ví dụ log đã scrub cùng kết quả kiểm tra.
+- `06-traces-and-prompts.txt`: số trace trong project cá nhân, prompt v1/v2, rollback và trace v1 sau rollback.
+- `12-incident-metric.json` và `13-incident-log.jsonl`: incident metrics và 10 log records dùng chung 5 correlation IDs.
 
-```text
-01-pytest.png
-02-log-validator.png
-03-dashboard-validator.png
-04-structured-log.png
-05-pii-redaction.png
-06-trace-list.png
-07-trace-waterfall.png
-08-trace-metadata.png
-09-prompt-versions.png
-10-prompt-rollback.png
-11-dashboard-overview.png
-12-incident-metric.png
-13-incident-log.png
-14-incident-trace.png
-```
+Dashboard và Langfuse đã được chụp bằng Computer Use trong phiên làm việc. Không có PNG được lưu tại đây, do giao diện Computer Use chỉ trả ảnh vào phiên làm việc; không đánh dấu ảnh GitHub là hoàn tất. Trang API Keys không được mở.
 
-Có thể dùng `.txt` cho output của tests/validators. Có thể tách dashboard thành nhiều ảnh nếu một ảnh không đọc rõ.
-
-Ảnh `04`, `05`, `13` lấy từ terminal hoặc `data/logs.jsonl`. Ảnh `06`–`10`, `14` lấy từ project Langfuse cá nhân `day13-k4-l3a-<MSSV>` và nên nhìn thấy tên project. Không mở/chụp trang API Keys.
-
-Từ `submission/REPORT.md`, dẫn ảnh bằng đường dẫn tương đối:
-
-```markdown
-![Trace waterfall](evidence/07-trace-waterfall.png)
-```
-
-Không commit secret, API key, PII thô hoặc evidence của học viên/lớp khác.
+Challenge ID là `day13-k4-l3a-monitoring-llmops-v1`; file challenge cá nhân bị ignore và không nằm trong evidence.

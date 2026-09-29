@@ -1,0 +1,23 @@
+Langfuse project: day13-k4-l3a-2A202602568
+Project URL: https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a
+Observed in Tracing UI on 2026-09-29 (Asia/Ho_Chi_Minh): 50 root observations and 150 total observations in the selected day window. The filtered promptVersion:1 view contained 10 generation observations.
+
+Prompt Management state verified in the same personal project:
+- Prompt: day13-chat
+- Version 1: label production; baseline template Feature/Docs/Question.
+- Version 2: label candidate; adds the concise evidence-grounding instruction.
+- Rollback: production label restored to version 1; a fresh application process then emitted version-1 generations.
+
+Verified version-1 generation after rollback:
+- Trace ID: 33513940aa24674ca7db3f8995559942
+- Correlation ID: req-e47c64bb
+- Prompt: day13-chat (v1); root duration 1.41 s; generate duration 0.16 s.
+- Trace link: https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a/traces?peek=9dc24b28d2304a6b&observation=9dc24b28d2304a6b&traceId=33513940aa24674ca7db3f8995559942&timestamp=2026-09-29T10%3A03%3A37.205Z
+
+Verified incident trace:
+- Trace ID: bc12b9eb90f196a812eab0cc63034a60
+- Correlation ID: req-8cdfbfd8
+- Root 5.71 s; retrieve 2.51 s; generate 0.16 s.
+- Trace link: https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a/traces?peek=a480f22ba9e55fe8&observation=a480f22ba9e55fe8&traceId=bc12b9eb90f196a812eab0cc63034a60&timestamp=2026-09-29T09%3A46%3A02.877Z
+
+Version 2 and its candidate label are visible in Prompt Management. The final trace check did not confirm a version-2 generation, so this file does not claim one. The browser screenshot of the prompt list and v1 trace tree was captured during Computer Use but could not be stored as PNG in this repository.

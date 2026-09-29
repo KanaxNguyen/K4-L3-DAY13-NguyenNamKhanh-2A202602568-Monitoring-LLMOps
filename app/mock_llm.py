@@ -34,10 +34,15 @@ class FakeLLM:
         output_tokens = random.randint(80, 180)
         if STATE["cost_spike"]:
             output_tokens *= 4
-        answer = (
-            "Starter answer. You should improve this output logic and add better quality checks. "
-            "Use retrieved context and keep responses concise."
-        )
+        docs = prompt.split("Docs=", 1)[-1].split("\nQuestion=", 1)[0].strip()
+        question = prompt.split("Question=", 1)[-1].strip()
+        if docs and not docs.startswith("No domain document matched."):
+            answer = f"Based on the available context: {docs}"
+        else:
+            answer = (
+                f"I don’t have a matching reference for ‘{question}’. "
+                "Share a little more context and I can give a more specific answer."
+            )
         return FakeResponse(
             text=answer,
             usage=FakeUsage(input_tokens, output_tokens),

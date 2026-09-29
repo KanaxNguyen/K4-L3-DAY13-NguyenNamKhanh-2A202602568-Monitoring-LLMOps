@@ -1,0 +1,35 @@
+{
+  "challenge_id": "day13-k4-l3a-monitoring-llmops-v1",
+  "incident": "rag_slow",
+  "seed": 1311,
+  "feature": "monitoring",
+  "source": "data/logs.jsonl response_sent records from latest live CP3 run",
+  "window_utc": {
+    "start": "2026-09-29T09:46:02Z",
+    "end": "2026-09-29T09:46:21Z"
+  },
+  "threshold_ms": 2000,
+  "responses": 5,
+  "responses_over_threshold": 5,
+  "latencies_ms_sorted": [
+    2927,
+    3096,
+    3156,
+    3190,
+    5715
+  ],
+  "median_latency_ms": 3156,
+  "latency_min_ms": 2927,
+  "latency_max_ms": 5715,
+  "ttft_ms_range": [
+    52,
+    58
+  ],
+  "correlation_ids": [
+    "req-8cdfbfd8",
+    "req-6e74899e",
+    "req-497b3e3b",
+    "req-265fd71c",
+    "req-3188b41b"
+  ]
+}
