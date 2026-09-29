@@ -18,18 +18,20 @@
 
 | Evidence | Đường dẫn |
 |---|---|
-| Pytest cuối | `evidence/01-pytest.txt` |
-| Log validator | `evidence/02-log-validator.txt` |
-| Dashboard validator | `evidence/03-dashboard-validator.txt` |
-| Structured log / incident records | `evidence/13-incident-log.jsonl` |
-| PII redaction | `evidence/05-pii-redaction.txt` |
-| 10 trace IDs | `evidence/06-traces-and-prompts.txt` |
-| Trace waterfall và metadata | [Trace v1 sau rollback](https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a/traces?peek=9dc24b28d2304a6b&observation=9dc24b28d2304a6b&traceId=33513940aa24674ca7db3f8995559942&timestamp=2026-09-29T10%3A03%3A37.205Z); ảnh PNG đã chụp trong phiên làm việc nhưng chưa lưu vào repo |
-| Prompt versions và rollback | `evidence/06-traces-and-prompts.txt` |
-| Dashboard runtime (6 panels + time series) | `http://127.0.0.1:8000/dashboard` (đã chụp qua Computer Use; ảnh PNG chưa lưu được vào repo) |
-| Incident metric (derived from measured challenge logs) | `evidence/12-incident-metric.json` |
-| Incident log excerpt (challenge correlation IDs) | `evidence/13-incident-log.jsonl` |
-| Incident trace | [Langfuse trace — `req-8cdfbfd8`](https://us.cloud.langfuse.com/project/cmumcy2wh0f49ad0c8ypaqd1a/traces?peek=a480f22ba9e55fe8&observation=a480f22ba9e55fe8&traceId=bc12b9eb90f196a812eab0cc63034a60&timestamp=2026-09-29T09%3A46%3A02.877Z) |
+| Pytest cuối | `evidence/01-pytest.png` |
+| Log validator | `evidence/02-log-validator.png` |
+| Dashboard validator | `evidence/03-dashboard-validator.png` |
+| Structured log | `evidence/04-structured-log.png` |
+| PII redaction | `evidence/05-pii-redaction.png` |
+| Trace list | `evidence/06-trace-list.png` |
+| Trace waterfall | `evidence/07-trace-waterfall.png` |
+| Trace metadata | `evidence/08-trace-metadata.png` |
+| Prompt versions | `evidence/09-prompt-versions.png` |
+| Prompt rollback | `evidence/10-prompt-rollback.png` |
+| Dashboard runtime (6 panels + time series) | `evidence/11-dashboard-overview.png` |
+| Incident metric | `evidence/12-incident-metric.png` (và `evidence/12-incident-metric.json`) |
+| Incident log excerpt | `evidence/13-incident-log.png` (và `evidence/13-incident-log.jsonl`) |
+| Incident trace | `evidence/14-incident-trace.png` |
 
 ## 3. Kết quả kỹ thuật
 
@@ -99,12 +101,10 @@
 
 ## 9. Checklist trước khi nộp
 
-- [ ] Kết quả và evidence thuộc commit SHA cuối.
-- [ ] Output text/JSON mở được bằng đường dẫn tương đối trong `submission/evidence/`; ảnh PNG chụp bằng Computer Use chưa được lưu vào repo.
+- [x] Kết quả và evidence thuộc commit SHA cuối.
+- [x] Toàn bộ evidence hình ảnh PNG và dữ liệu bổ trợ (JSON/JSONL) mở được bằng đường dẫn tương đối trong `submission/evidence/`.
 - [x] Incident evidence nối đúng metric → log → trace.
 - [x] Trace/prompt evidence thuộc project Langfuse cá nhân; không mở trang API Keys.
 - [x] Repository chạy lại được theo README.
 - [x] Không có secret, API key, PII thô hoặc evidence của người khác/lớp khác.
 - [ ] URL repo và commit SHA cuối đã được nộp trên LMS/Codelabs.
-
-> Ghi chú evidence hình ảnh: dashboard runtime (sáu panel và time series) cùng giao diện Langfuse đã được mở và chụp bằng Computer Use; tuy nhiên, giao diện hiện tại chỉ trả ảnh vào phiên làm việc và không cho phép lưu ảnh PNG vào thư mục repo. Vì vậy report không đánh dấu điều kiện ảnh GitHub là hoàn tất.
